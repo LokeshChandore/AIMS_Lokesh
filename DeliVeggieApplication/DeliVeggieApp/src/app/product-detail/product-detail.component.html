@@ -1,0 +1,7 @@
+<p style="margin-left: 1%;margin-top: 1%;"><b>Product</b></p>
+<div style="margin-left: 1%;margin-top: 1%;">
+    <div><b>Id: </b>{{ productDetail.id }}</div>
+    <div><b>Name: </b>{{ productDetail.name }}</div>
+    <div><b>Entry Date: </b>{{ productDetail.entryDate | date: 'fullDate' }}</div>
+    <div><b>Price for today (incl. reduction): </b>{{ productDetail.priceWithReduction }}</div>
+</div>

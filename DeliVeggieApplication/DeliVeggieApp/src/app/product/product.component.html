@@ -1,0 +1,17 @@
+<div style="padding: 10px;"><b>Product List</b></div>
+<div>
+    <table border="1" style="margin-left: 1%;margin-top: 1%;">
+      <thead>
+        <tr>
+            <th style="padding: 10px;">Id</th>
+            <th style="padding: 10px;">Name</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let prod of products">
+            <td style="padding: 10px;">{{ prod.id }}</td>
+            <td style="padding: 10px;"><a [routerLink]="[ '/product', prod.id]" [queryParams]="{id:prod.id}" class="nav-link" routerLinkActive="active">{{ prod.name }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
